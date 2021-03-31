@@ -226,4 +226,4 @@ https://blog.csdn.net/selt791/article/details/104575265
 
 	- 基于RocketMQ的IndexFile索引文件来实现的
 
-*XMind - Trial Version*
+参考文章（逻辑清晰）：http://www.dockone.io/article/9726
