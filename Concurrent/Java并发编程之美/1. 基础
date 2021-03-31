@@ -1,0 +1,68 @@
+# 并发基础
+
+## 通知与等待函数
+
+### wait() ——挂起
+
+### notify()——唤醒
+
+### join()——等待线程执行终止
+
+### sleep()——睡眠
+
+### yield()——让权
+
+### interrupt()——中断
+
+## 死锁条件
+
+### 互斥条件
+
+### 请求并持有条件（可破坏）
+
+### 不可剥夺条件
+
+### 环路条件（可破坏）
+
+## 线程类型
+
+### daemon线程
+
+- 比如垃圾回收线程
+
+### user线程
+
+只有最后一个用户线程结束后，JVM才会启动DestroyJavaVM线程来终止JVM线程。
+
+- 比如main()函数
+
+## 线程本地变量
+ThreadLocal
+
+### ThreadLocalMap
+（定制HashMap）
+
+- threadLocals（存放本地变量）
+- inheritableThreadLocals(可继承的)
+
+### getMap(t)
+
+- 获取当前线程的变量threadLocals
+
+### set()
+
+- 设置value值到threadLocals中，其中key为ThreadLocal的实例对象引用
+
+### setInitialValue()
+
+- 初始化threadLocals成员变量
+
+### remove()
+
+- 删除当前线程中指定的实例变量
+
+### InheritableThreadLocal类
+
+- ThreadLocal无继承性，所以InheritableThreadLocal类继承了ThreadLocal类并重写了其方法
+
+*XMind - Trial Version*
